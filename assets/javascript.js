@@ -37,7 +37,7 @@ window.onload = function () {
   
 
 
-  // Create geusses ul
+  // Create guesses ul
    result = function () {
     wordHolder = document.getElementById('hold');
     correct = document.createElement('span');
@@ -145,11 +145,7 @@ window.onload = function () {
    // Reset
 
   document.getElementById('reset').onclick = function() {
-    correct.parentNode.removeChild(correct);
-    letters.parentNode.removeChild(letters);
-    showClue.innerHTML = "";
-    context.clearRect(0, 0, 400, 400);
-    play();
+    location.reload();
   }
 }
 
